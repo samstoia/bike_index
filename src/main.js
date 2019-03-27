@@ -25,7 +25,7 @@ $(document).ready(function(){
       $('#bike-info').empty();
       let body = JSON.parse(response);
       var table = $('#bike-info');
-      table.find("tbody tr").remove();
+      
       table.append('<thead><tr><th>ID</th><th>Serial #</th><th>Manufacturer</th><th>Location: </th><th>Frame Model</th><th>Date Stolen:</th></tr></thead>');
       body.bikes.forEach(function(bike) {
         table.append('<tr><td><a href="https://bikeindex.org/bikes/' + bike.id + '">' + bike.id + '</a></td>' +
