@@ -1,0 +1,15 @@
+.container {
+  text-align: center;
+}
+table {
+  text-align: center;
+  display: none;
+}
+
+tr, td, th {
+  border: 2px solid black;
+}
+
+#searching {
+  display: none;
+}
